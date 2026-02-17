@@ -38,33 +38,51 @@ const itemVariants = {
 }
 
 export default function ServiceGrid({ onCTAClick }) {
+  // UPDATED: services per provided content (5 items)
   const cards = [
     {
-      title: 'Tactical Presence',
-      description: 'Armed and unarmed guarding with military-grade discipline.',
-      Illustration: ShieldIllustration,
-      imageUrl: 'https://images.pexels.com/photos/7718127/pexels-photo-7718127.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1'
+      title: 'Corporate Security',
+      description:
+        'Our operatives are carefully selected, de-risked and trained to fit into international best practices for the protection of assets, information and people.',
+      imageUrl:
+        'https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=900&q=80'
     },
     {
-      title: 'Rapid Response',
-      description: 'Mobile patrol units equipped with real-time GPS tracking.',
-      Illustration: BoltIllustration,
-      imageUrl: 'https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=800&q=80'
+      title: 'Event Security',
+      description:
+        'We add glamour to the event space with our Event Guards look-and-feel and deploy technology to secure the environment with steady response teams for distress and emergencies.',
+      imageUrl:
+        'https://images.unsplash.com/photo-1541872703-9b7e4966af64?auto=format&fit=crop&w=900&q=80'
     },
     {
-      title: 'Risk Mitigation',
-      description: 'Comprehensive fire watch and asset protection protocols.',
-      Illustration: EyeIllustration,
-      imageUrl: 'https://images.unsplash.com/photo-1520872020165-6a281f8c56b0?auto=format&fit=crop&w=800&q=80'
+      title: 'Electronic Security',
+      description:
+        'We leverage global partners to deliver e-security solutions that deter, detect, delay, and enable response: Access Control, Biometric, M-Scope, CCTV, electronic gates, and more.',
+      imageUrl:
+        'https://images.unsplash.com/photo-1590955552936-b69e40d3f230?auto=format&fit=crop&w=900&q=80'
+    },
+    {
+      title: 'Armed Security Support',
+      description:
+        'Robust, long-term relationships with the Nigeria Police Force and NSCDC facilitate quick response and armed guarding when required.',
+      imageUrl:
+        'https://images.unsplash.com/photo-1554068865-3f3800fcd077?auto=format&fit=crop&w=900&q=80'
+    },
+    {
+      title: 'Journey Management',
+      description:
+        'Our trained corporate close protection team safeguards assets in motion. With robust technology, we maintain clear sight and control of mobile assets with continuous tracking and response enablement.',
+      imageUrl:
+        'https://images.unsplash.com/photo-1550355291-30a3ca43eb3d?auto=format&fit=crop&w=900&q=80'
     }
   ]
 
   return (
     <section id="services" className="container py-12 md:py-14">
       <div className="mb-6">
-        <h2 className="text-2xl font-bold">Core Capabilities</h2>
+        <h2 className="text-2xl font-bold">Our Services</h2>
         <p className="text-sm text-neutral-700 dark:text-neutral-400">
-          Purpose-built security frameworks that reduce risk, not just observe it.
+          Security programs tailored to Nigeria’s market segments — Enterprise, Government, NGOs, and HNIs.
         </p>
       </div>
 
@@ -80,7 +98,6 @@ export default function ServiceGrid({ onCTAClick }) {
             <ServiceCard
               title={c.title}
               description={c.description}
-              Illustration={c.Illustration}
               imageUrl={c.imageUrl}
               cta={
                 <button onClick={onCTAClick} className="mt-3 btn-outline rounded-lg">

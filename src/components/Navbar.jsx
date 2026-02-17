@@ -38,7 +38,10 @@ export default function Navbar({ onOpenQuote }) {
             {[
               { to: '/', label: 'Home' },
               { to: '/services', label: 'Services' },
-              { to: '/about', label: 'About' }
+              { to: '/about', label: 'About' },
+              // ADDED: Careers + Contact
+              { to: '/careers', label: 'Careers' },
+              { to: '/contact', label: 'Contact' },
             ].map((item) => (
               <NavLink
                 key={item.to}
@@ -94,7 +97,10 @@ export default function Navbar({ onOpenQuote }) {
                 {[
                   { to: '/', label: 'Home' },
                   { to: '/services', label: 'Services' },
-                  { to: '/about', label: 'About' }
+                  { to: '/about', label: 'About' },
+                  // ADDED: Careers + Contact
+                  { to: '/careers', label: 'Careers' },
+                  { to: '/contact', label: 'Contact' },
                 ].map((item) => (
                   <NavLink
                     key={item.to}

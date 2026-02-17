@@ -8,6 +8,9 @@ import About from './pages/About.jsx'
 import QuoteModal from './components/QuoteModal.jsx'
 import BackToTop from './components/BackToTop.jsx'
 import MobileCTA from './components/MobileCTA.jsx'
+// ADD: new pages
+import Careers from './pages/Careers.jsx'
+import Contact from './pages/Contact.jsx'
 
 function App() {
   const [quoteOpen, setQuoteOpen] = useState(false)
@@ -20,10 +23,13 @@ function App() {
           <Route path="/" element={<Home onOpenQuote={() => setQuoteOpen(true)} />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
+          {/* ADDED: Careers + Contact */}
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer onOpenQuote={() => setQuoteOpen(true)} />
-      {/* ADD: global helpers */}
+      {/* global helpers */}
       <BackToTop />
       <MobileCTA onOpenQuote={() => setQuoteOpen(true)} />
       <QuoteModal open={quoteOpen} onClose={() => setQuoteOpen(false)} />

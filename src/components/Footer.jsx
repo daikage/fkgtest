@@ -5,21 +5,26 @@ export default function Footer({ onOpenQuote }) {
         <div>
           <h3 className="font-semibold mb-2">Fort Knox Guards</h3>
           <p className="text-sm text-neutral-700 dark:text-neutral-400">
-            Professional Intelligence. Tactical Security. Absolute Protection.
+            Security Solutions that Exceed Expectation using People, Technology and Response.
           </p>
         </div>
         <div>
           <h4 className="font-semibold mb-2">Services</h4>
           <ul className="text-sm space-y-1 text-neutral-700 dark:text-neutral-400">
-            <li>Armed & Unarmed Guarding</li>
-            <li>Mobile Patrol & Rapid Response</li>
-            <li>Fire Watch & Asset Protection</li>
+            <li>Corporate Security</li>
+            <li>Event Security</li>
+            <li>Electronic Security</li>
+            <li>Armed Security Support</li>
+            <li>Journey Management</li>
           </ul>
         </div>
         <div>
           <h4 className="font-semibold mb-2">Contact</h4>
-          <p className="text-sm text-neutral-700 dark:text-neutral-400">
-            Email: ops@fortknoxguards.com
+          {/* UPDATED: phone, email, address */}
+          <p className="text-sm text-neutral-700 dark:text-neutral-400">Phone: +234 902 000 0222</p>
+          <p className="text-sm text-neutral-700 dark:text-neutral-400">Email: info@fortknoxguards.com</p>
+          <p className="mt-2 text-xs text-neutral-600 dark:text-neutral-500">
+            Plot 302, Cadastral Zone B02, Behind American International School, Durumi, Abuja, FCT, Nigeria.
           </p>
           <button onClick={onOpenQuote} className="mt-3 btn-primary rounded-xl">
             Quick Quote

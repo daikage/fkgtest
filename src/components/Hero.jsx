@@ -53,7 +53,7 @@ export default function Hero({ onCTAClick }) {
           transition={{ duration: 0.6, delay: 0.05 }}
           className="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-brand to-amber-500"
         >
-          Professional Intelligence. Tactical Security. Absolute Protection.
+          Security Solutions that Exceed Expectation using People, Technology and Response
         </motion.h1>
 
         <motion.p
@@ -62,8 +62,7 @@ export default function Hero({ onCTAClick }) {
           transition={{ duration: 0.6, delay: 0.12 }}
           className="mt-4 max-w-2xl text-neutral-700 dark:text-neutral-300"
         >
-          Elite, site-specific security solutions for commercial, residential, and industrial assets.
-          We don’t just watch; we protect.
+          Fort Knox Guards is a security risk management solutions company established and licensed to render professional security solutions, tailored to meet every segment of the market (Enterprise, Government, NGOs, HNIs) in Nigeria.
         </motion.p>
 
         <motion.div
@@ -72,9 +71,9 @@ export default function Hero({ onCTAClick }) {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-8 flex gap-3"
         >
-          <button onClick={onCTAClick} className="btn-primary rounded-xl">
-            Get a Quick Quote
-          </button>
+          <a href="/about" className="btn-primary rounded-xl">
+            Learn More
+          </a>
           <a href="#services" className="btn-outline rounded-xl">
             Explore Services
           </a>

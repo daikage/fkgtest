@@ -29,14 +29,21 @@ export default function Metrics() {
   const inView = useInView(ref, { once: true, amount: 0.3 })
 
   const items = [
-    { label: 'Average Response', value: 7, suffix: 'min' },
-    { label: 'Sites Protected', value: 120 },
-    { label: 'Incident Reduction', value: 43, suffix: '%' },
+    { label: 'Manned Network Operating Centre', value: 24, suffix: '/7' },
+    { label: 'Patrol Motorcycles', value: 420 },
+    { label: 'Patrol Vehicles', value: 95 },
+    { label: 'Mobile Phones on CUG', value: 2500 },
   ]
 
   return (
     <section ref={ref} className="container mt-8">
-      <div className="grid gap-4 sm:grid-cols-3">
+      <div className="mb-4">
+        <h2 className="text-xl font-bold">Operational Footprint</h2>
+        <p className="text-sm text-neutral-700 dark:text-neutral-400">
+          Always-on operations with extensive mobile response capabilities.
+        </p>
+      </div>
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((it, i) => (
           <motion.div
             key={it.label}
