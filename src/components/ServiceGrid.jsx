@@ -45,35 +45,35 @@ export default function ServiceGrid({ onCTAClick }) {
       description:
         'Our operatives are carefully selected, de-risked and trained to fit into international best practices for the protection of assets, information and people.',
       imageUrl:
-        'https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=900&q=80'
+        'https://i.ibb.co/cKSBPCMt/DSC1477.jpg'
     },
     {
       title: 'Event Security',
       description:
         'We add glamour to the event space with our Event Guards look-and-feel and deploy technology to secure the environment with steady response teams for distress and emergencies.',
       imageUrl:
-        'https://images.unsplash.com/photo-1541872703-9b7e4966af64?auto=format&fit=crop&w=900&q=80'
+        'https://i.ibb.co/VWMyJKnY/DSC1443.jpg'
     },
     {
       title: 'Electronic Security',
       description:
         'We leverage global partners to deliver e-security solutions that deter, detect, delay, and enable response: Access Control, Biometric, M-Scope, CCTV, electronic gates, and more.',
       imageUrl:
-        'https://images.unsplash.com/photo-1590955552936-b69e40d3f230?auto=format&fit=crop&w=900&q=80'
+        'https://i.ibb.co/bgmfD219/DSC1468.jpg'
     },
     {
       title: 'Armed Security Support',
       description:
         'Robust, long-term relationships with the Nigeria Police Force and NSCDC facilitate quick response and armed guarding when required.',
       imageUrl:
-        'https://images.unsplash.com/photo-1554068865-3f3800fcd077?auto=format&fit=crop&w=900&q=80'
+        'https://i.ibb.co/8Qmy7nX/DSC1419.jpg'
     },
     {
       title: 'Journey Management',
       description:
         'Our trained corporate close protection team safeguards assets in motion. With robust technology, we maintain clear sight and control of mobile assets with continuous tracking and response enablement.',
       imageUrl:
-        'https://images.unsplash.com/photo-1550355291-30a3ca43eb3d?auto=format&fit=crop&w=900&q=80'
+        'https://i.ibb.co/hR9T7PB5/DSC1409.jpg'
     }
   ]
 

@@ -4,11 +4,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 export default function Hero({ onCTAClick }) {
   // Slider images (security-themed)
   const slides = [
-    'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1600&q=80',
-    'https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=1600&q=80',
-    'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1600&q=80',
-    'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1600&q=80',
-    'https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1600&q=80',
+    'https://i.ibb.co/XxzkZ4Dx/DSC1418.jpg',
+    'https://i.ibb.co/vC2NwDWw/DSC1350.jpg',
+    'https://i.ibb.co/7dt9gzQB/DSC1391.jpg',
+    'https://i.ibb.co/Y751zbVv/DSC1473.jpg',
+    'https://i.ibb.co/b5X8sgh1/DSC1477.jpg',
   ]
   const [index, setIndex] = useState(0)
   const [paused, setPaused] = useState(false)

@@ -19,7 +19,7 @@ export default function About() {
       {/* Visual */}
       <div className="mt-8 relative overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/50 backdrop-blur">
         <img
-          src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1600&q=80"
+          src="https://i.ibb.co/Fq8vbZY2/DSC1463.jpg"
           alt="Security operations and monitoring"
           loading="lazy"
           className="h-56 md:h-80 w-full object-cover"
