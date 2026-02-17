@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { ShieldCheck, PhoneCall, Moon, Sun, Menu, X } from 'lucide-react'
+import { PhoneCall, Moon, Sun, Menu, X } from 'lucide-react'
 import { useTheme } from '../hooks/useTheme.js'
 import { useEffect, useState } from 'react'
 
@@ -26,12 +26,15 @@ export default function Navbar({ onOpenQuote }) {
           className={`mt-3 glass rounded-2xl px-4 py-3 md:px-6 md:py-3.5 flex items-center justify-between transition-all
             ${scrolled ? 'bg-white/80 dark:bg-neutral-900/70 shadow-soft backdrop-saturate-150' : ''}`}
         >
-          <div className="flex items-center gap-3">
-            <ShieldCheck className="text-brand" size={26} />
-            <NavLink to="/" className="font-semibold tracking-wide">
-              Fort Knox Guards
-            </NavLink>
-          </div>
+          <NavLink to="/" className="flex items-center gap-3">
+            <img
+              src="/logo.png"
+              alt="Fort Knox Guards logo"
+              className="h-8 w-auto"
+              height="32"
+            />
+            <span className="font-semibold tracking-wide">Fort Knox Guards</span>
+          </NavLink>
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-6">

@@ -1,3 +1,5 @@
+import { Instagram, Facebook, Linkedin, Twitter } from 'lucide-react'
+
 export default function Footer({ onOpenQuote }) {
   return (
     <footer className="mt-16 border-t border-neutral-200 dark:border-neutral-800">
@@ -20,15 +22,54 @@ export default function Footer({ onOpenQuote }) {
         </div>
         <div>
           <h4 className="font-semibold mb-2">Contact</h4>
-          {/* UPDATED: phone, email, address */}
-          <p className="text-sm text-neutral-700 dark:text-neutral-400">Phone: +234 902 000 0222</p>
-          <p className="text-sm text-neutral-700 dark:text-neutral-400">Email: info@fortknoxguards.com</p>
-          <p className="mt-2 text-xs text-neutral-600 dark:text-neutral-500">
-            Plot 302, Cadastral Zone B02, Behind American International School, Durumi, Abuja, FCT, Nigeria.
+          <p className="text-sm text-neutral-700 dark:text-neutral-400">
+            Email: ops@fortknoxguards.com
           </p>
           <button onClick={onOpenQuote} className="mt-3 btn-primary rounded-xl">
             Quick Quote
           </button>
+
+          <div className="mt-4">
+            <h5 className="font-semibold mb-2 text-sm">Follow Us</h5>
+            <div className="flex items-center gap-2">
+              <a
+                href="https://instagram.com/fortknoxguards"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition"
+              >
+                <Instagram size={18} />
+              </a>
+              <a
+                href="https://facebook.com/fortknoxguards"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition"
+              >
+                <Facebook size={18} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/fort-knox-guards"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition"
+              >
+                <Linkedin size={18} />
+              </a>
+              <a
+                href="https://x.com/fortknoxguards"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (formerly Twitter)"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition"
+              >
+                <Twitter size={18} />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <div className="py-4 text-center text-xs text-neutral-500 dark:text-neutral-500">
