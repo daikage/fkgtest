@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ShieldCheck, X } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const STORAGE_KEY = 'fkg_privacy_ack_v1'
 
@@ -49,7 +50,7 @@ export default function PrivacyPolicyModal() {
             </p>
             <div className="mt-3 flex flex-col sm:flex-row gap-2">
               <button onClick={accept} className="btn-primary rounded-xl">Accept & Continue</button>
-              <a href="/privacy-policy" className="btn-outline rounded-xl">Read Full Policy</a>
+              <Link to="/privacy-policy" className="btn-outline rounded-xl">Read Full Policy</Link>
             </div>
           </div>
         </div>
