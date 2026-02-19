@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-export default function Hero({ onCTAClick }) {
+export default function Hero ({ onCTAClick }) {
   // Slider images (security-themed)
   const slides = [
     'https://i.ibb.co/XxzkZ4Dx/DSC1418.jpg',
@@ -85,14 +85,14 @@ export default function Hero({ onCTAClick }) {
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
         >
-          <div className="relative h-56 md:h-80 w-full">
+          <div className="relative h-[28rem] md:h-[34rem] w-full">
             <AnimatePresence mode="wait">
               <motion.img
                 key={slides[index]}
                 src={slides[index]}
                 alt="Security operations visual"
                 loading="eager"
-                className="absolute inset-0 h-full w-full object-cover"
+                className="absolute inset-0 h-full w-full object-cover object-top"
                 initial={{ opacity: 0, scale: 1.02, y: 8 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0.0, scale: 1.01 }}

@@ -11,6 +11,8 @@ import MobileCTA from './components/MobileCTA.jsx'
 // ADD: new pages
 import Careers from './pages/Careers.jsx'
 import Contact from './pages/Contact.jsx'
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
+import PrivacyPolicyModal from './components/PrivacyPolicyModal.jsx'
 
 function App() {
   const [quoteOpen, setQuoteOpen] = useState(false)
@@ -23,9 +25,10 @@ function App() {
           <Route path="/" element={<Home onOpenQuote={() => setQuoteOpen(true)} />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
-          {/* ADDED: Careers + Contact */}
+          {/* ADDED: Careers + Contact + Privacy */}
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </main>
       <Footer onOpenQuote={() => setQuoteOpen(true)} />
@@ -33,6 +36,8 @@ function App() {
       <BackToTop />
       <MobileCTA onOpenQuote={() => setQuoteOpen(true)} />
       <QuoteModal open={quoteOpen} onClose={() => setQuoteOpen(false)} />
+      {/* ADDED: first-launch privacy modal */}
+      <PrivacyPolicyModal />
     </div>
   )
 }

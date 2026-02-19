@@ -73,7 +73,7 @@ export default function ServiceGrid({ onCTAClick }) {
       description:
         'Our trained corporate close protection team safeguards assets in motion. With robust technology, we maintain clear sight and control of mobile assets with continuous tracking and response enablement.',
       imageUrl:
-        'https://i.ibb.co/hR9T7PB5/DSC1409.jpg'
+        'https://i.ibb.co/q3K8MYG4/man-on-bike-2.jpg'
     }
   ]
 

@@ -9,7 +9,7 @@ export default function Home({ onOpenQuote }) {
       <Hero onCTAClick={onOpenQuote} />
       <ServiceGrid onCTAClick={onOpenQuote} />
       {/* ADD: testimonials for social proof */}
-      <Testimonials />
+      {/* <Testimonials /> */}
       <TrustedBy />
     </>
   )

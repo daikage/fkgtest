@@ -74,6 +74,10 @@ export default function Footer({ onOpenQuote }) {
       </div>
       <div className="py-4 text-center text-xs text-neutral-500 dark:text-neutral-500">
         © {new Date().getFullYear()} Fort Knox Guards. All rights reserved.
+        {' '}·{' '}
+        <a href="/privacy-policy" className="underline hover:text-neutral-700 dark:hover:text-neutral-300">
+          Privacy Policy
+        </a>
       </div>
     </footer>
   )

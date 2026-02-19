@@ -10,7 +10,7 @@ export default function Contact() {
           src="https://i.ibb.co/SDB91sWg/DSC1386.jpg"
           alt="Security operations and monitoring"
           loading="lazy"
-          className="h-56 md:h-80 w-full object-cover"
+          className="h-[28rem] md:h-[34rem] w-full object-cover object-top"
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
       </div>
