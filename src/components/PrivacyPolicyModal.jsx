@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { ShieldCheck } from 'lucide-react'
+import { ShieldCheck, X } from 'lucide-react'
 
 const STORAGE_KEY = 'fkg_privacy_ack_v1'
 
@@ -28,6 +28,14 @@ export default function PrivacyPolicyModal() {
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-4">
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative w-full max-w-lg glass rounded-2xl p-5 sm:p-6 shadow-elevated">
+        {/* ADDED: Close button (X) */}
+        <button
+          onClick={() => setOpen(false)}
+          aria-label="Close"
+          className="btn-ghost rounded-lg absolute right-3 top-3"
+        >
+          <X size={18} />
+        </button>
         <div className="flex items-start gap-3">
           <div className="shrink-0 rounded-lg bg-brand/15 text-brand p-2">
             <ShieldCheck size={18} />
