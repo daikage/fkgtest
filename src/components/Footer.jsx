@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Footer({ onOpenQuote }) {
   return (
     <footer className="mt-16 border-t border-neutral-200 dark:border-neutral-800">
-      <div className="container py-10 grid gap-8 sm:grid-cols-3">
+      <div className="px-2 md:px-4 py-10 grid gap-8 sm:grid-cols-3">
         <div>
           <h3 className="font-semibold mb-2">Fort Knox Guards</h3>
           <p className="text-sm text-neutral-700 dark:text-neutral-400">

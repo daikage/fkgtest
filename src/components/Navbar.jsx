@@ -21,10 +21,13 @@ export default function Navbar({ onOpenQuote }) {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50">
-      <div className="container">
+      {/* Make navbar span almost full width with small side padding */}
+      <div className="px-2 md:px-4">
         <div
           className={`mt-3 glass rounded-2xl px-4 py-3 md:px-6 md:py-3.5 flex items-center justify-between transition-all
             ${scrolled ? 'bg-white/80 dark:bg-neutral-900/70 shadow-soft backdrop-saturate-150' : ''}`}
+          // ensure the bar fills available width
+          style={{ width: '100%' }}
         >
           {/* Brand (hide site title on mobile) */}
           <div className="flex items-center gap-3">

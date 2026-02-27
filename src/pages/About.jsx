@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="container py-10">
+    <div className="px-2 md:px-4 py-10">
       <h1 className="text-3xl font-bold">About Fort Knox Guards</h1>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">
         We mitigate risk through intelligence-led operations. Our teams leverage SOPs, site audits,

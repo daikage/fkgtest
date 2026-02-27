@@ -78,7 +78,7 @@ export default function ServiceGrid({ onCTAClick }) {
   ]
 
   return (
-    <section id="services" className="container py-12 md:py-14">
+    <section id="services" className="px-2 md:px-4 py-12 md:py-14">
       <div className="mb-6">
         <h2 className="text-2xl font-bold">Our Services</h2>
         <p className="text-sm text-neutral-700 dark:text-neutral-400">

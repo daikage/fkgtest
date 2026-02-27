@@ -40,7 +40,7 @@ export default function Hero ({ onCTAClick }) {
         transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
       />
 
-      <div className="relative container py-20 md:py-28">
+      <div className="relative px-2 md:px-4 py-20 md:py-28">
         <motion.span
           className="inline-flex items-center rounded-full border border-neutral-200 dark:border-neutral-800 px-3 py-1.5 text-xs uppercase tracking-wider text-neutral-600 dark:text-neutral-300 bg-white/80 dark:bg-neutral-900/60 backdrop-blur"
           initial={{ opacity: 0, y: 8 }}

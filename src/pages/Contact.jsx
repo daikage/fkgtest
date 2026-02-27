@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="container py-10">
+    <div className="px-2 md:px-4 py-10">
       <h1 className="text-3xl font-bold">Contact Us</h1>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">
         Get in touch with Fort Knox Guards for tailored security solutions.

@@ -36,7 +36,7 @@ export default function Metrics() {
   ]
 
   return (
-    <section ref={ref} className="container mt-8">
+    <section ref={ref} className="px-2 md:px-4 mt-8">
       <div className="mb-4">
         <h2 className="text-xl font-bold">Operational Footprint</h2>
         <p className="text-sm text-neutral-700 dark:text-neutral-400">

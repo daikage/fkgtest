@@ -52,7 +52,7 @@ export default function TrustedBy() {
   ]
 
   return (
-    <section className="container py-10">
+    <section className="px-2 md:px-4 py-10">
       <div className="flex items-center gap-2 mb-3">
         <span className="inline-block h-1 w-6 rounded bg-brand" />
         <h3 className="text-sm font-semibold text-neutral-600 dark:text-neutral-400">
