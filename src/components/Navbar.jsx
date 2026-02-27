@@ -26,15 +26,23 @@ export default function Navbar({ onOpenQuote }) {
           className={`mt-3 glass rounded-2xl px-4 py-3 md:px-6 md:py-3.5 flex items-center justify-between transition-all
             ${scrolled ? 'bg-white/80 dark:bg-neutral-900/70 shadow-soft backdrop-saturate-150' : ''}`}
         >
-          <NavLink to="/" className="flex items-center gap-3">
+          {/* Brand (hide site title on mobile) */}
+          <div className="flex items-center gap-3">
+            {/* logo/icon remains visible */}
+            {/* If you have a logo img, keep it here */}
             <img
               src="/logo.png"
               alt="Fort Knox Guards logo"
               className="h-8 w-auto"
               height="32"
             />
-            <span className="font-semibold tracking-wide">Fort Knox Guards</span>
-          </NavLink>
+            <NavLink
+              to="/"
+              className="font-semibold tracking-wide hidden md:inline"
+            >
+              Fort Knox Guards
+            </NavLink>
+          </div>
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-6">
@@ -61,7 +69,7 @@ export default function Navbar({ onOpenQuote }) {
             ))}
           </nav>
 
-          {/* Right actions */}
+          {/* Right actions (hide Request Quote button on mobile) */}
           <div className="flex items-center gap-2">
             <button
               aria-label="Toggle dark mode"
@@ -70,12 +78,15 @@ export default function Navbar({ onOpenQuote }) {
             >
               {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
             </button>
-            <button onClick={onOpenQuote} className="btn-primary rounded-xl inline-flex items-center gap-2">
+            <button
+              onClick={onOpenQuote}
+              className="hidden md:inline-flex btn-primary rounded-xl items-center gap-2"
+            >
               <PhoneCall size={16} />
               Request Quote
             </button>
 
-            {/* Mobile menu button */}
+            {/* Mobile menu button remains visible */}
             <button
               aria-label="Open menu"
               className="md:hidden btn-ghost rounded-xl"
