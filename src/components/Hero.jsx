@@ -9,6 +9,9 @@ export default function Hero ({ onCTAClick }) {
     'https://i.ibb.co/7dt9gzQB/DSC1391.jpg',
     'https://i.ibb.co/Y751zbVv/DSC1473.jpg',
     'https://i.ibb.co/b5X8sgh1/DSC1477.jpg',
+    'https://i.ibb.co/21YgRg4N/hgyuj.png',
+    'https://i.ibb.co/99P2RYbZ/1000030634.png'
+
   ]
   const [index, setIndex] = useState(0)
   const [paused, setPaused] = useState(false)
