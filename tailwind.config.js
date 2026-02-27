@@ -5,7 +5,15 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: '1rem'
+      padding: '1rem',
+      // ADDED: unify container max widths across app (matches navbar container)
+      screens: {
+        sm: '600px',
+        md: '728px',
+        lg: '984px',
+        xl: '1100px',
+        '2xl': '1100px',
+      },
     },
     extend: {
       colors: {

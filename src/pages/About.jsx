@@ -1,8 +1,11 @@
 export default function About() {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-10">
+    <div className="container py-10">
       <h1 className="text-3xl font-bold">About Fort Knox Guards</h1>
-      {/* UPDATED: company overview and mission per content */}
+      <p className="mt-2 text-neutral-600 dark:text-neutral-400">
+        We mitigate risk through intelligence-led operations. Our teams leverage SOPs, site audits,
+        and continuous improvement to deliver measurable outcomes — not just presence.
+      </p>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">
         Fort Knox Guards is a security service company established and licensed to render professional security and
         community relations services. The company’s director and management are made up of experienced individuals with

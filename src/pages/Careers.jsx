@@ -1,6 +1,6 @@
 export default function Careers() {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-10">
+    <div className="container py-10">
       <h1 className="text-3xl font-bold">Careers</h1>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">
         Are You Interested In Working With Us? Join our team & start your career as a Security Operative Officer.
