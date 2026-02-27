@@ -66,14 +66,14 @@ export default function ServiceGrid({ onCTAClick }) {
       description:
         'Robust, long-term relationships with the Nigeria Police Force and NSCDC facilitate quick response and armed guarding when required.',
       imageUrl:
-        'https://i.ibb.co/B2hSksGD/hgyuj.png'
+        'https://i.ibb.co/21YgRg4N/hgyuj.png'
     },
     {
       title: 'Journey Management',
       description:
         'Our trained corporate close protection team safeguards assets in motion. With robust technology, we maintain clear sight and control of mobile assets with continuous tracking and response enablement.',
       imageUrl:
-        'https://i.ibb.co/tptqZBbY/1000030634.png'
+        'https://i.ibb.co/99P2RYbZ/1000030634.png'
     }
   ]
 
