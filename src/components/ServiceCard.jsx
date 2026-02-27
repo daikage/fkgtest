@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export default function ServiceCard({ title, description, Illustration, cta, imageUrl }) {
+export default function ServiceCard({ title, description, Illustration, cta, imageUrl, imageHeight }) {
   const [loaded, setLoaded] = useState(false)
 
   // Simulate illustration "loading"
@@ -11,7 +11,7 @@ export default function ServiceCard({ title, description, Illustration, cta, ima
 
   return (
     <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 p-5 bg-white/80 dark:bg-neutral-900/50 backdrop-blur shadow-subtle hover:shadow-elevated transition">
-      <div className="h-40 mb-4">
+      <div className={`${imageHeight ?? 'h-40'} mb-4`}>
         {!loaded ? (
           <div className="skeleton h-full w-full" />
         ) : (

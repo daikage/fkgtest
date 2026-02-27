@@ -88,7 +88,7 @@ export default function Hero ({ onCTAClick }) {
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
         >
-          <div className="relative h-[28rem] md:h-[34rem] w-full">
+          <div className="relative h-[32rem] md:h-[40rem] w-full">
             <AnimatePresence mode="wait">
               <motion.img
                 key={slides[index]}

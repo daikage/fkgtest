@@ -99,6 +99,7 @@ export default function ServiceGrid({ onCTAClick }) {
               title={c.title}
               description={c.description}
               imageUrl={c.imageUrl}
+              imageHeight="h-48 md:h-56"
               cta={
                 <button onClick={onCTAClick} className="mt-3 btn-outline rounded-lg">
                   Request Quote
