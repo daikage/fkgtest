@@ -34,7 +34,7 @@ export default function Footer({ onOpenQuote }) {
         <div>
           <h4 className="font-semibold mb-2">Contact</h4>
           <p className="text-sm text-neutral-700 dark:text-neutral-400">
-            Email: ops@fortknoxguards.com
+            Email: info@fortknoxguards.com
           </p>
           <button onClick={onOpenQuote} className="mt-3 btn-primary rounded-xl">
             Quick Quote
