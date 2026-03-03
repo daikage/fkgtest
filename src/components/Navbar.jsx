@@ -54,6 +54,7 @@ export default function Navbar({ onOpenQuote }) {
               { to: '/services', label: 'Services' },
               { to: '/about', label: 'About' },
               // ADDED: Careers + Contact
+              { to: '/management', label: 'Leadership' },
               { to: '/careers', label: 'Careers' },
               { to: '/contact', label: 'Contact' },
             ].map((item) => (
@@ -116,6 +117,7 @@ export default function Navbar({ onOpenQuote }) {
                   { to: '/services', label: 'Services' },
                   { to: '/about', label: 'About' },
                   // ADDED: Careers + Contact
+                  { to: '/management', label: 'Leadership' },
                   { to: '/careers', label: 'Careers' },
                   { to: '/contact', label: 'Contact' },
                 ].map((item) => (

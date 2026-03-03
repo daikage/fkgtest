@@ -13,6 +13,7 @@ import Careers from './pages/Careers.jsx'
 import Contact from './pages/Contact.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import PrivacyPolicyModal from './components/PrivacyPolicyModal.jsx'
+import Management from './pages/Management.jsx'
 
 function App() {
   const [quoteOpen, setQuoteOpen] = useState(false)
@@ -29,6 +30,7 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/management" element={<Management />} />
         </Routes>
       </main>
       <Footer onOpenQuote={() => setQuoteOpen(true)} />
