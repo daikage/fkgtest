@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import ServiceCard from './ServiceCard.jsx'
+import { Link, useNavigate } from 'react-router-dom'
 
 function ShieldIllustration({ className }) {
   return (
@@ -38,49 +39,56 @@ const itemVariants = {
 }
 
 export default function ServiceGrid({ onCTAClick }) {
-  // UPDATED: services to match provided content
+  const navigate = useNavigate()
+  // UPDATED: services to include slug for detail pages
   const cards = [
     {
       title: 'Corporate Security',
       description:
         'Our operatives are carefully selected, de-risked and trained to fit into international best practices for the protection of assets, information and people.',
       imageUrl:
-        'https://i.ibb.co/cKSBPCMt/DSC1477.jpg'
+        'https://i.ibb.co/cKSBPCMt/DSC1477.jpg',
+      slug: 'corporate-security'
     },
     {
       title: 'Event Security',
       description:
         'We add glamour to the event space with our Event Guards look-and-feel and deploy technology to secure the environment with steady response teams for distress and emergencies.',
       imageUrl:
-        'https://i.ibb.co/VWMyJKnY/DSC1443.jpg'
+        'https://i.ibb.co/VWMyJKnY/DSC1443.jpg',
+      slug: 'event-security'
     },
     {
       title: 'Security Technology Solutions',
       description:
         'Deployment of CCTV surveillance, access control and biometric entry systems, intrusion detection, and the M‑Scope Walk‑Through Metal Detector for advanced threat detection.',
       imageUrl:
-        'https://i.ibb.co/bgmfD219/DSC1468.jpg'
+        'https://i.ibb.co/bgmfD219/DSC1468.jpg',
+      slug: 'security-technology-solutions'
     },
     {
       title: 'Risk & Advisory Services',
       description:
         'Expert risk assessments, background verification, and compliance audits that identify vulnerabilities and strengthen operational security.',
       imageUrl:
-        'https://images.unsplash.com/photo-1551281044-8a9f509a0ee8?auto=format&fit=crop&w=1200&q=80'
+        'https://images.unsplash.com/photo-1551281044-8a9f509a0ee8?auto=format&fit=crop&w=1200&q=80',
+      slug: 'risk-and-advisory-services'
     },
     {
       title: 'Armed Security Support',
       description:
         'Robust, long-term relationships with the Nigeria Police Force and NSCDC facilitate quick response and armed guarding when required.',
       imageUrl:
-        'https://i.ibb.co/21YgRg4N/hgyuj.png'
+        'https://i.ibb.co/21YgRg4N/hgyuj.png',
+      slug: 'armed-security-support'
     },
     {
       title: 'Journey Management',
       description:
         'Structured secure movement planning and monitoring to ensure the safety of personnel and assets during travel operations.',
       imageUrl:
-        'https://i.ibb.co/99P2RYbZ/1000030634.png'
+        'https://i.ibb.co/99P2RYbZ/1000030634.png',
+      slug: 'journey-management'
     }
   ]
 
@@ -101,16 +109,44 @@ export default function ServiceGrid({ onCTAClick }) {
         className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
       >
         {cards.map((c) => (
-          <motion.div key={c.title} variants={itemVariants}>
+          <motion.div
+            key={c.title}
+            variants={itemVariants}
+            onClick={() => navigate(`/services/${c.slug}`)}
+            className="cursor-pointer"
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault()
+                navigate(`/services/${c.slug}`)
+              }
+            }}
+          >
             <ServiceCard
               title={c.title}
               description={c.description}
               imageUrl={c.imageUrl}
               imageHeight="h-48 md:h-56"
               cta={
-                <button onClick={onCTAClick} className="mt-3 btn-outline rounded-lg">
-                  Request Quote
-                </button>
+                <div className="mt-3 flex gap-2">
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      onCTAClick()
+                    }}
+                    className="btn-outline rounded-lg"
+                  >
+                     Request Quote
+                   </button>
+                  <Link
+                    to={`/services/${c.slug}`}
+                    onClick={(e) => e.stopPropagation()}
+                    className="btn-primary rounded-lg"
+                  >
+                    Learn More
+                  </Link>
+                </div>
               }
             />
           </motion.div>

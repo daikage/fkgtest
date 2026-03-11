@@ -4,6 +4,7 @@ import { HashRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 import ClickSoundProvider from './components/ClickSoundProvider.jsx'
+import ServiceDetail from './pages/ServiceDetail.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

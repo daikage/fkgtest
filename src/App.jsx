@@ -14,6 +14,7 @@ import Contact from './pages/Contact.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import PrivacyPolicyModal from './components/PrivacyPolicyModal.jsx'
 import Management from './pages/Management.jsx'
+import ServiceDetail from './pages/ServiceDetail.jsx'
 
 function App() {
   const [quoteOpen, setQuoteOpen] = useState(false)
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home onOpenQuote={() => setQuoteOpen(true)} />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/:slug" element={<ServiceDetail />} />
           <Route path="/about" element={<About />} />
           {/* ADDED: Careers + Contact + Privacy */}
           <Route path="/careers" element={<Careers />} />
