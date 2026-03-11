@@ -38,7 +38,7 @@ const itemVariants = {
 }
 
 export default function ServiceGrid({ onCTAClick }) {
-  // UPDATED: services per provided content (5 items)
+  // UPDATED: services to match provided content
   const cards = [
     {
       title: 'Corporate Security',
@@ -55,11 +55,18 @@ export default function ServiceGrid({ onCTAClick }) {
         'https://i.ibb.co/VWMyJKnY/DSC1443.jpg'
     },
     {
-      title: 'Electronic Security',
+      title: 'Security Technology Solutions',
       description:
-        'We leverage global partners to deliver e-security solutions that deter, detect, delay, and enable response: Access Control, Biometric, M-Scope, CCTV, electronic gates, and more.',
+        'Deployment of CCTV surveillance, access control and biometric entry systems, intrusion detection, and the M‑Scope Walk‑Through Metal Detector for advanced threat detection.',
       imageUrl:
         'https://i.ibb.co/bgmfD219/DSC1468.jpg'
+    },
+    {
+      title: 'Risk & Advisory Services',
+      description:
+        'Expert risk assessments, background verification, and compliance audits that identify vulnerabilities and strengthen operational security.',
+      imageUrl:
+        'https://images.unsplash.com/photo-1551281044-8a9f509a0ee8?auto=format&fit=crop&w=1200&q=80'
     },
     {
       title: 'Armed Security Support',
@@ -71,7 +78,7 @@ export default function ServiceGrid({ onCTAClick }) {
     {
       title: 'Journey Management',
       description:
-        'Our trained corporate close protection team safeguards assets in motion. With robust technology, we maintain clear sight and control of mobile assets with continuous tracking and response enablement.',
+        'Structured secure movement planning and monitoring to ensure the safety of personnel and assets during travel operations.',
       imageUrl:
         'https://i.ibb.co/99P2RYbZ/1000030634.png'
     }
@@ -80,9 +87,9 @@ export default function ServiceGrid({ onCTAClick }) {
   return (
     <section id="services" className="px-2 md:px-4 py-12 md:py-14">
       <div className="mb-6">
-        <h2 className="text-2xl font-bold">Our Services</h2>
+        <h2 className="text-2xl font-bold">Comprehensive Security Services</h2>
         <p className="text-sm text-neutral-700 dark:text-neutral-400">
-          Security programs tailored to Nigeria’s market segments — Enterprise, Government, NGOs, and HNIs.
+          Fortknox Guards offers a full spectrum of security services designed to address the evolving needs of modern organizations.
         </p>
       </div>
 

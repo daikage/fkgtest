@@ -18,6 +18,18 @@ export default function WhyChooseUs() {
           Industry-leading posture backed by training, technology, and disciplined response.
         </p>
       </div>
+      {/* Section visual */}
+      <div className="relative overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/50 backdrop-blur mb-6">
+        <img
+          src="https://i.ibb.co/bpT7hwt/DSC-8949.jpg?auto=format&fit=crop&w=1600&q=80"
+          alt="Training and disciplined security operations"
+          loading="lazy"
+          decoding="async"
+          className="h-100 w-full object-cover object-center"
+          onError={(e) => (e.currentTarget.style.display = 'none')}
+        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent" />
+      </div>
       <div className="grid gap-4 sm:grid-cols-2">
         {features.map((f) => (
           <div

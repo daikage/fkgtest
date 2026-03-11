@@ -14,13 +14,6 @@ export default function About() {
             community relations services. The company’s director and management are made up of experienced individuals with
             military backgrounds, paramilitary training, and corporate executives with high levels of integrity and moral standing.
           </p>
-          <p>
-            We help you improve and reduce crime risk on your location(s) through a complete security program that protects
-            your key assets: your people and property.
-          </p>
-          <p>
-            More than two decades in the industry give us the power to perform every day and every time.
-          </p>
         </div>
       </div>
 

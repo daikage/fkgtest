@@ -9,7 +9,7 @@ export default function Hero ({ onCTAClick }) {
     'https://i.ibb.co/7dt9gzQB/DSC1391.jpg',
     'https://i.ibb.co/Y751zbVv/DSC1473.jpg',
     'https://i.ibb.co/b5X8sgh1/DSC1477.jpg',
-    'https://i.ibb.co/21YgRg4N/hgyuj.png',
+    'https://i.ibb.co/WvPbzfp3/Gemini-Generated-Image-6pg8qa6pg8qa6pg8.png',
     'https://i.ibb.co/99P2RYbZ/1000030634.png'
 
   ]
@@ -56,7 +56,7 @@ export default function Hero ({ onCTAClick }) {
           transition={{ duration: 0.6, delay: 0.05 }}
           className="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-brand to-amber-500"
         >
-          Security Solutions that Exceed Expectation using People, Technology and Response
+          Integrated Security & Risk Management Solutions Across Nigeria
         </motion.h1>
 
         <motion.p
@@ -65,7 +65,7 @@ export default function Hero ({ onCTAClick }) {
           transition={{ duration: 0.6, delay: 0.12 }}
           className="mt-4 max-w-2xl text-neutral-700 dark:text-neutral-300"
         >
-          Fort Knox Guards is a security risk management solutions company established and licensed to render professional security solutions, tailored to meet every segment of the market (Enterprise, Government, NGOs, HNIs) in Nigeria.
+          Protecting people, assets, and operations with intelligence‑driven security. From corporate facilities to high‑profile events and executive movements, our trained personnel and technology‑driven systems provide reliable protection and operational assurance.
         </motion.p>
 
         <motion.div
