@@ -66,16 +66,16 @@ export default function ServiceDetail() {
         </div>
       </div>
 
-      {/* Gallery */}
+       {/* Gallery */}
       {service.images?.length > 4 && (
-        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+        <div className="mt-6 grid gap-4 sm:grid-cols-4">
           {service.images.slice(1).map((src, i) => (
             <div key={i} className="relative overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-900/40">
               <img
                 src={src}
                 alt={`${service.title} gallery ${i + 1}`}
                 loading="lazy"
-                className="h-48 md:h-56 w-full object-cover object-center"
+                className="h-80 w-full object-cover object-center"
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
             </div>
