@@ -2,34 +2,24 @@ import { motion } from 'framer-motion'
 
 const team = [
   {
-    name: 'Adetokunbo Ogundeyip',
-    role: 'Group Managing Director',
-    imageUrl: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=200&h=200&fit=crop'
+    name: 'Oluwatoba Oyewale',
+    role: 'Executive Director',
+    imageUrl: 'https://i.ibb.co/zVGpjZVR/Oluwatoba-Oyewale-Executive-Director.jpg?q=80&w=200&h=200&fit=crop'
   },
   {
-    name: 'Oluwaseun Omolara',
-    role: 'Executive Director, Operations',
-    imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&h=200&fit=crop'
+    name: 'Morenike Oladele',
+    role: 'Finance Head',
+    imageUrl: 'https://i.ibb.co/2174MG2n/Morenike-Oladele-Finance-Head.jpg?q=80&w=200&h=200&fit=crop'
   },
   {
-    name: 'Chidi Nwosu',
-    role: 'Head of Corporate Security',
-    imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&h=200&fit=crop'
+    name: 'Dorathy Edet',
+    role: 'Regional Manger Lagos and SW',
+    imageUrl: 'https://i.ibb.co/VYRNBZsc/Dorathy-Edet-Regional-Manager-Lagos-SW.jpg?q=80&w=200&h=200&fit=crop'
   },
   {
-    name: 'Amina Bello',
-    role: 'Head of Journey Management',
-    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&h=200&fit=crop'
-  },
-  {
-    name: 'Femi Adebayo',
-    role: 'Head of Electronic Security',
-    imageUrl: 'https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=200&h=200&fit=crop'
-  },
-  {
-    name: 'Ngozi Okonjo',
-    role: 'Head of Event Security',
-    imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&h=200&fit=crop'
+    name: 'Akinwunmi Akinsuroju',
+    role: 'GM Operational Standardization Quality Management',
+    imageUrl: 'https://i.ibb.co/wr47g0w6/Akinwunmi-Akinsuroju-GM-Operational-Standardization-Quality-Management.jpg?q=80&w=200&h=200&fit=crop'
   }
 ]
 
