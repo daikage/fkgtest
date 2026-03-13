@@ -71,7 +71,7 @@ export default function ServiceGrid({ onCTAClick }) {
       description:
         'Expert risk assessments, background verification, and compliance audits that identify vulnerabilities and strengthen operational security.',
       imageUrl:
-        'https://images.unsplash.com/photo-1551281044-8a9f509a0ee8?auto=format&fit=crop&w=1200&q=80',
+        'https://i.ibb.co/SD64qjCm/Whats-App-Image-2026-03-13-at-09-01-38.jpg',
       slug: 'risk-and-advisory-services'
     },
     {
