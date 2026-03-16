@@ -15,19 +15,19 @@ export default function Footer({ onOpenQuote }) {
           <h4 className="font-semibold mb-2">Services</h4>
           <ul className="text-sm space-y-1 text-neutral-700 dark:text-neutral-400">
             <li>
-              <Link to="/services#services" className="hover:text-brand">Corporate Security</Link>
+              <Link to="/services/manned-guarding" className="hover:text-brand">Manned Guarding</Link>
             </li>
             <li>
-              <Link to="/services#services" className="hover:text-brand">Event Security</Link>
+              <Link to="/services/executive-protection" className="hover:text-brand">Executive Protection</Link>
             </li>
             <li>
-              <Link to="/services#services" className="hover:text-brand">Electronic Security</Link>
+              <Link to="/services/event-security-management" className="hover:text-brand">Event Security</Link>
             </li>
             <li>
-              <Link to="/services#services" className="hover:text-brand">Armed Security Support</Link>
+              <Link to="/services/security-technology-solutions" className="hover:text-brand">Security Technology</Link>
             </li>
             <li>
-              <Link to="/services#services" className="hover:text-brand">Journey Management</Link>
+              <Link to="/services/journey-management" className="hover:text-brand">Journey Management</Link>
             </li>
           </ul>
         </div>

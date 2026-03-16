@@ -43,28 +43,28 @@ export default function ServiceGrid({ onCTAClick }) {
   // UPDATED: services to include slug for detail pages
   const cards = [
     {
-      title: 'Corporate Security',
+      title: 'Manned Guarding',
       description:
-        'Our operatives are carefully selected, de-risked and trained to fit into international best practices for the protection of assets, information and people.',
+        'Professional, vetted security personnel for access control, patrols, and incident response, providing a visible and proactive line of defence.',
       imageUrl:
-        'https://i.ibb.co/cKSBPCMt/DSC1477.jpg',
-      slug: 'corporate-security'
+        'https://i.ibb.co/yn2jQPP0/DSC1358.jpg',
+      slug: 'manned-guarding'
     },
     {
-      title: 'Event Security',
+      title: 'Event Security Management',
       description:
-        'We add glamour to the event space with our Event Guards look-and-feel and deploy technology to secure the environment with steady response teams for distress and emergencies.',
+        'Comprehensive security for corporate functions, concerts, and public gatherings, including crowd management and emergency readiness.',
       imageUrl:
         'https://i.ibb.co/VWMyJKnY/DSC1443.jpg',
-      slug: 'event-security'
+      slug: 'event-security-management'
     },
     {
-      title: 'Security Technology Solutions',
+      title: 'Executive Protection',
       description:
-        'Deployment of CCTV surveillance, access control and biometric entry systems, intrusion detection, and the M‑Scope Walk‑Through Metal Detector for advanced threat detection.',
+        'Discreet, strategic personal security for senior executives and high-net-worth individuals, including close protection and secure travel planning.',
       imageUrl:
-        'https://i.ibb.co/bgmfD219/DSC1468.jpg',
-      slug: 'security-technology-solutions'
+        'https://i.ibb.co/cKSBPCMt/DSC1477.jpg',
+      slug: 'executive-protection'
     },
     {
       title: 'Risk & Advisory Services',
@@ -75,12 +75,12 @@ export default function ServiceGrid({ onCTAClick }) {
       slug: 'risk-and-advisory-services'
     },
     {
-      title: 'Armed Security Support',
+      title: 'Security Technology Solutions',
       description:
-        'Robust, long-term relationships with the Nigeria Police Force and NSCDC facilitate quick response and armed guarding when required.',
+        'Deployment of CCTV, access control, intrusion detection, and advanced screening for modern threat detection.',
       imageUrl:
-        'https://i.ibb.co/21YgRg4N/hgyuj.png',
-      slug: 'armed-security-support'
+        'https://i.ibb.co/39qPhLtq/Gemini-Generated-Image-wbe1h7wbe1h7wbe1.png',
+      slug: 'security-technology-solutions'
     },
     {
       title: 'Journey Management',
@@ -88,7 +88,7 @@ export default function ServiceGrid({ onCTAClick }) {
         'Structured secure movement planning and monitoring to ensure the safety of personnel and assets during travel operations.',
       imageUrl:
         'https://i.ibb.co/99P2RYbZ/1000030634.png',
-      slug: 'journey-management'
+        slug: 'journey-management'
     }
   ]
 
