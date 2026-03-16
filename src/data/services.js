@@ -88,7 +88,7 @@ export const services = [
       'Executive briefings and reporting',
     ],
     images: [
-      'https://i.ibb.co/SD64qjCm/Whats-App-Image-2026-03-13-at-09-01-38.jpg?auto=format&fit=crop&w=1200&q=80',
+      'https://i.ibb.co/Q76mTSVG/Whats-App-Image-2026-03-13-at-14-39-27.jpg?auto=format&fit=crop&w=1200&q=80',
       'https://i.ibb.co/FbMT1m8T/Whats-App-Image-2026-03-13-at-09-00-18.jpg?auto=format&fit=crop&w=1200&q=80',
       'https://i.ibb.co/yFr5wySy/Whats-App-Image-2026-03-13-at-09-00-34.jpg?auto=format&fit=crop&w=1200&q=80',
       'https://i.ibb.co/QjjTpWMx/happy-islamic-businesswoman-wearing-headset-while-working-office.jpg?auto=format&fit=crop&w=1200&q=80',
