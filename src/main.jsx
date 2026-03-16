@@ -10,7 +10,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HashRouter>
       {/* Global click sound for all interactive elements */}
-      <ClickSoundProvider src="/sounds/click.mp3" volume={0.35} />
+      <ClickSoundProvider src="/sounds/click.mp3" volume={0.0} />
       <App />
     </HashRouter>
   </StrictMode>,
