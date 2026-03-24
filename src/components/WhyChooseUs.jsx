@@ -12,11 +12,12 @@ const features = [
 export default function WhyChooseUs() {
   return (
     <section className="px-2 md:px-4 py-10">
-      <div className="mb-6">
-        <h2 className="text-2xl font-bold">Why Choose Us</h2>
-        <p className="text-sm text-neutral-700 dark:text-neutral-400">
-          Industry-leading posture backed by training, technology, and disciplined response.
-        </p>
+      <div className="mb-10 text-center">
+         <h2 className="text-2xl font-bold">Why Choose Us</h2>
+         {/* mx-auto centers the block, max-w-md keeps the line length comfortable */}
+          <p className="mx-auto mt-2 max-w-md text-sm text-neutral-700 dark:text-neutral-400">
+            Industry-leading posture backed by training, technology, and disciplined response.
+         </p>
       </div>
       {/* Section visual */}
       <div className="relative overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/50 backdrop-blur mb-6">

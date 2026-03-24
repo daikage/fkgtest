@@ -10,7 +10,7 @@ const items = [
 
 export default function TechnologyInnovation() {
   return (
-    <section className="px-2 md:px-4 py-10">
+    <section className="px-2 md:px-4 py-10 text-center">
       <div className="mb-6">
         <h2 className="text-2xl font-bold">Security Powered by Modern Technology</h2>
         <p className="text-sm text-neutral-700 dark:text-neutral-400">
