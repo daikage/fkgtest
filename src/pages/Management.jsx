@@ -25,7 +25,7 @@ const team = [
 
 export default function Management() {
   return (
-    <div className="px-2 md:px-4 py-10">
+    <div className="px-2 md:px-4 py-10 text-center">
       <h1 className="text-3xl font-bold">Our Leadership</h1>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">
         Meet the experienced team driving our mission to set and maintain the standard for security in Africa.
