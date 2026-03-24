@@ -70,7 +70,7 @@ export default function ServiceDetail() {
             </ul>
             <div className="mt-4 flex gap-2">
               <a href="/#services" className="btn-outline rounded-xl">Back to Services</a>
-              <a href="/#contact" className="btn-primary rounded-xl">Request Quote</a>
+              {/* <a href="/#contact" className="btn-primary rounded-xl">Request Quote</a> */}
             </div>
           </div>
         </div>

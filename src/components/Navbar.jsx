@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 export default function Navbar({ onOpenQuote }) {
   const { theme, toggle } = useTheme()
   const [scrolled, setScrolled] = useState(false)
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10)
     onScroll()
@@ -20,40 +21,40 @@ export default function Navbar({ onOpenQuote }) {
   }, [mobileOpen])
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50">
-      {/* Make navbar span almost full width with small side padding */}
-      <div className="px-2 md:px-4">
-        <div
-          className={`mt-3 glass rounded-2xl px-4 py-3 md:px-6 md:py-3.5 flex items-center justify-between transition-all
-            ${scrolled ? 'bg-white/80 dark:bg-neutral-900/70 shadow-soft backdrop-saturate-150' : ''}`}
-          // ensure the bar fills available width
-          style={{ width: '100%' }}
-        >
-          {/* Brand (hide site title on mobile) */}
+    // 1. "fixed top-0" ensures it stays pinned. 
+    // 2. We add a transition for the background color/blur.
+    <header 
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+        scrolled 
+          ? 'bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800' 
+          : 'bg-transparent'
+      }`}
+    >
+      {/* Centered container for the content */}
+      <div className="mx-auto w-full max-w-[1600px] px-4">
+        <div className="flex items-center justify-between h-16 md:h-20">
+          
+          {/* Brand */}
           <div className="flex items-center gap-3">
-            {/* logo/icon remains visible */}
-            {/* If you have a logo img, keep it here */}
             <img
               src="/logo.png"
               alt="Fort Knox Guards logo"
               className="h-8 w-auto"
-              height="32"
             />
             <NavLink
               to="/"
-              className="font-semibold tracking-wide hidden md:inline"
+              className="font-semibold tracking-wide hidden md:inline text-neutral-900 dark:text-white"
             >
               Fort Knox Guards
             </NavLink>
           </div>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-8">
             {[
               { to: '/', label: 'Home' },
               { to: '/services', label: 'Services' },
               { to: '/about', label: 'About' },
-              // ADDED: Careers + Contact
               { to: '/management', label: 'Leadership' },
               { to: '/careers', label: 'Careers' },
               { to: '/contact', label: 'Contact' },
@@ -62,96 +63,75 @@ export default function Navbar({ onOpenQuote }) {
                 key={item.to}
                 to={item.to}
                 className={({ isActive }) =>
-                  `text-sm hover:text-brand transition ${
-                    isActive ? 'text-brand font-medium' : 'text-neutral-600 dark:text-neutral-300'
+                  `text-sm transition-colors hover:text-brand ${
+                    isActive ? 'text-brand font-semibold' : 'text-neutral-600 dark:text-neutral-300'
                   }`
                 }
-                onClick={() => setMobileOpen(false)}
               >
                 {item.label}
               </NavLink>
             ))}
           </nav>
 
-          {/* Right actions (hide Request Quote button on mobile) */}
+          {/* Right actions */}
           <div className="flex items-center gap-2">
             <button
               aria-label="Toggle dark mode"
               onClick={toggle}
-              className="btn-ghost rounded-xl"
+              className="p-2 text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-lg transition"
             >
               {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
             </button>
+            
             <button
               onClick={onOpenQuote}
-              className="hidden md:inline-flex btn-primary rounded-xl items-center gap-2"
+              className="hidden md:inline-flex btn-primary px-5 py-2 rounded-lg items-center gap-2 text-sm font-medium"
             >
               <PhoneCall size={16} />
               Request Quote
             </button>
 
-            {/* Mobile menu button remains visible */}
+            {/* Mobile menu toggle */}
             <button
               aria-label="Open menu"
-              className="md:hidden btn-ghost rounded-xl"
+              className="md:hidden p-2 text-neutral-600 dark:text-neutral-300"
               onClick={() => setMobileOpen((o) => !o)}
             >
-              {mobileOpen ? <X size={18} /> : <Menu size={18} />}
+              {mobileOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile overlay + menu panel */}
+      {/* Mobile Menu Panel */}
       {mobileOpen && (
-        <>
-          <div
-            className="fixed inset-0 z-40 bg-black/40"
-            onClick={() => setMobileOpen(false)}
-          />
-          <div className="fixed z-50 left-4 right-4 top-[72px] md:hidden">
-            <div className="glass rounded-2xl p-4 shadow-soft">
-              <nav className="grid gap-2">
-                {[
-                  { to: '/', label: 'Home' },
-                  { to: '/services', label: 'Services' },
-                  { to: '/about', label: 'About' },
-                  // ADDED: Careers + Contact
-                  { to: '/management', label: 'Leadership' },
-                  { to: '/careers', label: 'Careers' },
-                  { to: '/contact', label: 'Contact' },
-                ].map((item) => (
-                  <NavLink
-                    key={item.to}
-                    to={item.to}
-                    className={({ isActive }) =>
-                      `rounded-lg px-3 py-2 text-sm transition ${
-                        isActive ? 'bg-neutral-100 dark:bg-neutral-800 text-brand font-medium' : 'hover:bg-neutral-100 dark:hover:bg-neutral-800'
-                      }`
-                    }
-                    onClick={() => setMobileOpen(false)}
-                  >
-                    {item.label}
-                  </NavLink>
-                ))}
-              </nav>
-              <div className="mt-3 grid grid-cols-2 gap-2">
-                <button
-                  onClick={() => { toggle(); setMobileOpen(false) }}
-                  className="btn-outline rounded-xl"
-                >
-                  {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
-                </button>
-                <button
-                  onClick={() => { onOpenQuote(); setMobileOpen(false) }}
-                  className="btn-primary rounded-xl"
-                >
-                  Quick Quote
-                </button>
-              </div>
+        <div className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 shadow-xl">
+          <nav className="flex flex-col p-4">
+            {[
+              { to: '/', label: 'Home' },
+              { to: '/services', label: 'Services' },
+              { to: '/about', label: 'About' },
+              { to: '/management', label: 'Leadership' },
+              { to: '/careers', label: 'Careers' },
+              { to: '/contact', label: 'Contact' },
+            ].map((item) => (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                className="px-4 py-3 text-base border-b border-neutral-50 dark:border-neutral-800 last:border-none"
+                onClick={() => setMobileOpen(false)}
+              >
+                {item.label}
+              </NavLink>
+            ))}
+            <div className="mt-4 grid grid-cols-2 gap-3 p-2">
+               <button onClick={onOpenQuote} className="btn-primary py-3 rounded-lg">Quick Quote</button>
+               <button onClick={toggle} className="btn-outline py-3 rounded-lg">
+                 {theme === 'dark' ? 'Light' : 'Dark'} Mode
+               </button>
             </div>
-          </div>
-        </>
+          </nav>
+        </div>
       )}
     </header>
   )

@@ -111,18 +111,17 @@ html.dark {
   --brand-dark: #cc5a00;
 }
 
-/* Override default index.css centering to allow full layout */
-body {
-  display: block;
-  min-height: 0;
-  background: #ffffff;
-  color: #111111;
-}
+/* Boxed layout background for contrast */
+body { background: #f6f7f9; }
+.dark body { background: #0b0b0c; }
 
 /* Glass effect for navbar/panels */
 .glass {
   @apply bg-white/70 dark:bg-neutral-900/60 backdrop-blur-xl border border-white/30 dark:border-neutral-800 shadow-soft;
 }
+
+/* Boxed page card */
+.page-card { @apply rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white/85 dark:bg-neutral-900/60 backdrop-blur shadow-elevated; }
 
 /* Layout wrapper */
 .app {

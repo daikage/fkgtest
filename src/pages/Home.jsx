@@ -9,6 +9,7 @@ import TechnologyInnovation from '../components/TechnologyInnovation.jsx'
 import Experience from '../components/Experience.jsx'
 import Stats from '../components/Stats.jsx'
 import CallToAction from '../components/CallToAction.jsx'
+import PageBox from '../components/PageBox.jsx'
 
 
 export default function Home({ onOpenQuote }) {

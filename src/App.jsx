@@ -15,6 +15,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import PrivacyPolicyModal from './components/PrivacyPolicyModal.jsx'
 import Management from './pages/Management.jsx'
 import ServiceDetail from './pages/ServiceDetail.jsx'
+import PageBox from './components/PageBox.jsx' // ADDED
 
 function App() {
   const [quoteOpen, setQuoteOpen] = useState(false)
@@ -23,17 +24,20 @@ function App() {
     <div className="min-h-screen bg-white text-black dark:bg-neutral-950 dark:text-neutral-100 transition-colors">
       <Navbar onOpenQuote={() => setQuoteOpen(true)} />
       <main className="pt-20">
-        <Routes>
-          <Route path="/" element={<Home onOpenQuote={() => setQuoteOpen(true)} />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/:slug" element={<ServiceDetail />} />
-          <Route path="/about" element={<About />} />
-          {/* ADDED: Careers + Contact + Privacy */}
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/management" element={<Management />} />
-        </Routes>
+        <PageBox>
+          {/* Wrap all routed pages so every page is boxed */}
+          <Routes>
+            <Route path="/" element={<Home onOpenQuote={() => setQuoteOpen(true)} />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/services/:slug" element={<ServiceDetail />} />
+            <Route path="/about" element={<About />} />
+            {/* ADDED: Careers + Contact + Privacy */}
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/management" element={<Management />} />
+          </Routes>
+        </PageBox>
       </main>
       <Footer onOpenQuote={() => setQuoteOpen(true)} />
       {/* global helpers */}

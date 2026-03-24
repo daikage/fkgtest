@@ -1,5 +1,7 @@
+import PageBox from '../components/PageBox.jsx'
 export default function About() {
   return (
+  <>
     <div className="px-2 md:px-4 py-10">
       <h1 className="text-3xl font-bold">About Fort Knox Guards</h1>
       {/* Wrapped the About text in a card */}
@@ -79,5 +81,6 @@ export default function About() {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
       </div>
     </div>
+  </>
   )
 }

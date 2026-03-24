@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom'
 export default function Footer({ onOpenQuote }) {
   return (
     <footer className="mt-16 border-t border-neutral-200 dark:border-neutral-800">
-      <div className="px-2 md:px-4 py-10 grid gap-8 sm:grid-cols-3">
+      <div className="mx-auto w-full max-w-[1200px] px-4 md:px-6 py-12 md:py-14 grid gap-10 sm:grid-cols-3">
         <div>
-          <h3 className="font-semibold mb-2">Fort Knox Guards</h3>
+          <h3 className="font-semibold mb-2 text-brand">Fort Knox Guards</h3>
           <p className="text-sm text-neutral-700 dark:text-neutral-400">
             Security Solutions that Exceed Expectation using People, Technology and Response.
           </p>
         </div>
         <div>
-          <h4 className="font-semibold mb-2">Services</h4>
+          <h4 className="font-semibold mb-2 text-brand">Services</h4>
           <ul className="text-sm space-y-1 text-neutral-700 dark:text-neutral-400">
             <li>
               <Link to="/services/manned-guarding" className="hover:text-brand">Manned Guarding</Link>
@@ -32,13 +32,13 @@ export default function Footer({ onOpenQuote }) {
           </ul>
         </div>
         <div>
-          <h4 className="font-semibold mb-2">Contact</h4>
+          <h4 className="font-semibold mb-2 text-brand">Contact</h4>
           <p className="text-sm text-neutral-700 dark:text-neutral-400">
             Email: info@fortknoxguards.com
           </p>
-          <button onClick={onOpenQuote} className="mt-3 btn-primary rounded-xl">
+          {/* <button onClick={onOpenQuote} className="mt-3 btn-primary rounded-xl">
             Quick Quote
-          </button>
+          </button> */}
 
           <div className="mt-4">
             <h5 className="font-semibold mb-2 text-sm">Follow Us</h5>
@@ -83,7 +83,7 @@ export default function Footer({ onOpenQuote }) {
           </div>
         </div>
       </div>
-      <div className="py-4 text-center text-xs text-neutral-500 dark:text-neutral-500">
+      <div className="mx-auto w-full max-w-[1200px] px-4 md:px-6 py-6 text-center text-xs text-neutral-500 dark:text-neutral-500">
         © {new Date().getFullYear()} Fort Knox Guards. All rights reserved.
         {' '}·{' '}
         <Link to="/privacy-policy" className="underline hover:text-neutral-700 dark:hover:text-neutral-300">

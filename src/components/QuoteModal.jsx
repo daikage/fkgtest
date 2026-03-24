@@ -74,9 +74,12 @@ export default function QuoteModal({ open, onClose }) {
                 defaultValue=""
               >
                 <option value="" disabled>Select a service</option>
-                <option value="tactical-presence">Tactical Presence</option>
-                <option value="rapid-response">Rapid Response</option>
-                <option value="risk-mitigation">Risk Mitigation</option>
+                <option value="manned-guarding">Manned Guarding</option>
+                <option value="event-security-management">Event Security Management</option>
+                <option value="executive-protection">Executive Protection</option>
+                <option value="risk-and-advisory-services">Risk & Advisory Services</option>
+                <option value="security-technology-solutions">Security Technology Solutions</option>
+                <option value="journey-management">Journey Management</option>
               </select>
               {errors.service && <p className="text-xs text-red-500 mt-1">{errors.service.message}</p>}
             </div>

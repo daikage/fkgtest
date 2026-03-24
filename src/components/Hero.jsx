@@ -54,9 +54,10 @@ export default function Hero ({ onCTAClick }) {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.05 }}
-          className="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-brand to-amber-500"
+          className="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight leading-snug md:leading-snug pb-1 md:pb-1.5 antialiased bg-clip-text text-transparent bg-gradient-to-r from-brand to-amber-500"
         >
-          Integrated Security & Risk Management Solutions Across Nigeria
+          <span className="block">Integrated Security & Risk Management</span>
+          <span className="block">Solutions Across Nigeria</span>
         </motion.h1>
 
         <motion.p
@@ -74,9 +75,9 @@ export default function Hero ({ onCTAClick }) {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-8 flex gap-3"
         >
-          <a href="/about" className="btn-primary rounded-xl">
+          {/* <a href="/about" className="btn-primary rounded-xl">
             Learn More
-          </a>
+          </a> */}
           <a href="#services" className="btn-outline rounded-xl">
             Explore Services
           </a>

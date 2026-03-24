@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import ServiceCard from './ServiceCard.jsx'
 import { Link, useNavigate } from 'react-router-dom'
+import PageBox from '../components/PageBox.jsx'
 
 function ShieldIllustration({ className }) {
   return (
@@ -130,7 +131,7 @@ export default function ServiceGrid({ onCTAClick }) {
               imageHeight="h-48 md:h-56"
               cta={
                 <div className="mt-3 flex gap-2">
-                  <button
+                  {/* <button
                     onClick={(e) => {
                       e.stopPropagation()
                       onCTAClick()
@@ -138,7 +139,7 @@ export default function ServiceGrid({ onCTAClick }) {
                     className="btn-outline rounded-lg"
                   >
                      Request Quote
-                   </button>
+                   </button> */}
                   <Link
                     to={`/services/${c.slug}`}
                     onClick={(e) => e.stopPropagation()}
